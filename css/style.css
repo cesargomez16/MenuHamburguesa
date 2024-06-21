@@ -68,12 +68,16 @@ img {
   right: 0;
   width: 100%;
   background-color: var(--second-modal-color);
-  transform: translate(-100%, 0);
+   opacity: 0;
+  visibility: hidden; 
+ /*  transform: translate(-100%, 0); */
   transition: transform 0.3s ease;
 }
 
 .panel.is-active {
-  transform: translate(0, 0);
+   /* transform: translate(0, 0);  */
+   opacity: 1;
+  visibility: visible; 
 }
 
 .panel-btn {
