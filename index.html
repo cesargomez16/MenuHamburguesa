@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-dark>
 
 <head>
   <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body data-dark>
   <header class="header">
     <h1>Ejercicos del Dom</h1>
   </header>
@@ -23,8 +23,8 @@
   <aside class="panel">
     <nav class="menu">
       <a href="#seccion1">Reloj digital y alarma sonora</a>
-      <a href="#seccion2">seccion 2</a>
-      <a href="#seccion3">seccion 3</a>
+      <a href="#seccion2">Eventos del teclado</a>
+      <a href="#seccion3">Cuenta Regresiva</a>
       <a href="#seccion4">seccion 4</a>
       <a href="#seccion5">seccion 5</a>
     </nav>
@@ -39,14 +39,21 @@
         <button id="activar-alarma">Iniciar Alarma</button>
         <button id="desactivar-alarma"> Detener Alarma</button>
       </div>
+    </section>
 
-    </section>
     <section id="seccion2" class="section">
-      <h2>sección 2</h2>
+      <h2>Eventos del teclado</h2>
+
+      <article class="stage">
+        <div class="ball"></div>
+      </article>
     </section>
+
     <section id="seccion3" class="section">
-      <h2>sección 3</h2>
+      <h2>Cuenta Regresiva</h2>
+      <div id="countdown"></div>
     </section>
+
     <section id="seccion4" class="section">
       <h2>sección 4</h2>
     </section>
@@ -54,6 +61,9 @@
       <h2>sección 5</h2>
     </section>
   </main>
+
+  <button class="scroll-top-btn hidden">&#11014;</button>
+  <button class="dark-theme-btn"> 🌙</button>
 
   <script src="js/index_dom.js" type="module"></script>
 
